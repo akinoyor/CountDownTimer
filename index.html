@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center mt-3">
       <div class="row">
         <h1>タイマー</h1>
         <div id="timer" class="border border-secondary fs-1 text-center my-3">00:00:00</div>
@@ -17,10 +17,11 @@
           <div>
             <input type="number" id="inputTime" min="0" placeholder='秒数を入力'>秒
           </div>
-          <button id="setTime" type="button" class="btn btn-secondary">SET</button>
-          <button id="clear" type="button" class="btn btn-secondary">Clear</button>
+          <button id="setTime" type="button" class="btn btn-primary">SET</button>
+          <button id="clear" type="button" class="btn btn-warning">Clear</button>
         </div>
-        <button type="button" class="btn btn-secondary">Start</button>
+        <button id="start" type="button" class="btn btn-secondary">Start</button>
+        <button id="stop" type="button" class="btn btn-danger none">Stop</button>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
